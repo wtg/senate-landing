@@ -1,0 +1,3 @@
+# Mac OS X specific ignores
+.DS_Store
+._*
