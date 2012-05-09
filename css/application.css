@@ -8,7 +8,7 @@
 -------------------------------------------------- */
 body {
   position: relative;
-  padding-top: 90px;
+  padding-top: 10px;
   background-color: #fff;
   background-image: url(../img/grid-18px-masked.png);
   background-repeat: repeat-x;
@@ -18,7 +18,7 @@ body {
 /* Space out sub-sections more
 -------------------------------------------------- */
 section {
-  padding-top: 60px;
+  padding-top: 10px;
 }
 
 /* Faded out hr */
@@ -105,6 +105,19 @@ img#logo {
 
 #description p {
 	font-size: 20pt;
+}
+
+#info ul {
+
+}
+
+#info ul * {
+	font-size: 14pt;
+	line-height: 1.25em;
+}
+
+#info ul ul {
+	margin-left: 1em;
 }
 
 nav#quicklinks {
