@@ -1,0 +1,125 @@
+/* Student Senate Landing Page
+ * Portions shamlessly copied from the Twitter Bootstrap documentation.
+ * Copyright 2012 Kenley Cheung (Student Senate Web Technologies Group)
+ * 
+ */
+
+/* Body and structure
+-------------------------------------------------- */
+body {
+  position: relative;
+  padding-top: 10px;
+  background-color: #fff;
+  background-image: url(../img/grid-18px-masked.png);
+  background-repeat: repeat-x;
+  background-position: 0 40px;
+}
+
+/* Space out sub-sections more
+-------------------------------------------------- */
+section {
+  padding-top: 10px;
+}
+
+/* Faded out hr */
+hr.soften {
+  height: 1px;
+  margin: 54px 0;
+  background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+  border: 0;
+}
+
+
+/* Jumbotrons
+-------------------------------------------------- */
+.jumbotron {
+  position: relative;
+}
+.jumbotron h1 {
+  margin-bottom: 9px;
+  font-size: 81px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.jumbotron p {
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.jumbotron .btn-large {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 14px 24px;
+  margin-right: 10px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+/* Masthead */
+.masthead {
+  padding-top: 36px;
+  margin-bottom: 72px;
+}
+.masthead h1,
+.masthead p {
+  text-align: center;
+}
+.masthead h1 {
+  margin-bottom: 18px;
+}
+.masthead p {
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* Footer
+-------------------------------------------------- */
+.footer {
+  margin-top: 45px;
+  padding: 35px 0 36px;
+  border-top: 1px solid #e5e5e5;
+}
+.footer p {
+  margin-bottom: 0;
+  color: #555;
+}
+
+/* Specific content
+-------------------------------------------------- */
+
+body {
+	background-color: #EEE;
+}
+
+img#logo {
+	width: 40%;
+	margin: 0px auto;
+	display: block;
+	text-align: center;
+}
+
+#description p {
+	font-size: 20pt;
+}
+.container .span4 h2 {
+	padding-top: 10px;
+}
+.container .span4 ul {
+	padding-top: 5px;
+	list-style-type: none;
+	margin: 0px;
+}
+.container .span4 ul li {
+	padding: 5px;
+}
+
+#warning .modal-body strong {
+	color: red;
+	display: block;
+	text-align: center;
+}
