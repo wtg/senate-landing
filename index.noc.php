@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title>Student Senate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57.png"/>
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114.png" />
+	
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="css/noc.css" rel="stylesheet">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-modal.js"></script>
+	<script src="js/application.js"></script>
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+		$('#warning').modal();	
+		//$('#warning').modal('hide');
+
+		$('#warning').modal('show');
+		
+		$('#warning').on('hidden', function ()
+		{
+			forceNewWindow();
+		});
+	});
+	
+	</script>
+</head>
+
+<body>
+<div class="container">
+<div class="row">
+	<div class="span4"><img src="img/WTGLogo_lg.png"></div>
+	<div class="span4"><img src="img/ss_logo.png"></div>
+	<div class="span4"><h1>Network<br />Operations<br />Center</h1></div>
+</div>
+<div class="row">
+	<div class="span4">
+		<h2>Information</h2>
+		<ul>
+			<li><a href="http://wiki.studentsenate.rpi.edu">Senate Wiki</a></li>
+			<li><a href="http://webtech.union.rpi.edu">The Offive (WTG Blog)</a></li>
+			<li><a href="http://studentsenate.rpi.edu">Student Senate Website</a></li>
+		<ul>
+		<h2>Internal Tools</h2>
+		<ul>
+			<li><a href="http://senatedev.union.rpi.edu/">Senate Development Server (senatedev)</a></li>
+			<li><a href="http://senatefiles.union.rpi.edu/">Senate File Server (senatefiles)</a></li>
+			<li><a href="http://noc.studentsenate.rpi.edu/wiki/">New WTG Wiki</a></li>
+			<li><a href="http://senatedev.union.rpi.edu/wtgWiki/">Old WTG Wiki</a></li>
+		<ul>
+		<strong>Note: </strong><em>Internal tools require authentication.</em>
+	</div>
+	<div class="span4">
+		<h2>Projects</h2>
+		<ul>
+			<li><a href="http://concerto.rpi.edu">Concerto Digital Signage</a></li>
+			<li><a href="http://docs.studentsenate.rpi.edu">Flagship Documents</a></li>
+			<li><a href="http://myrpi.org">myRPI</a></li>
+			<li><a href="http://hosting.myrpi.org">myRPI-space (Student Development/Hosting)</a></li>
+		</ul>
+	</div>
+	<div class="span4">
+		<h2>Monitoring</h2>
+		<ul>
+			<li><a href="http://noc.studentsenate.rpi.edu/cacti/">Cacti (routers and switches)</a></li>
+			<li><a href="http://noc.studentsenate.rpi.edu/munin/">Munin (servers and hosts)</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- Footer
+================================================== -->
+<footer class="footer">
+	<em>Unauthorized access to this system is forbidden and will be prosecuted by law.
+		<br />By accessing this system, you agree that your actions may be monitored if unauthorized usage is suspected.
+		<br />Your IP address is <?php echo $_SERVER['REMOTE_ADDR'] . " (" . gethostbyaddr($_SERVER['REMOTE_ADDR']) .")"; ?>.
+	</em>
+	<p class="pull-right"><a href="#">Back to top</a></p>
+	<p>Copyright &copy; RPI Student Senate 2012</p>
+	<p>Designed by the <a href="http://webtech.union.rpi.edu" target="_blank">Web Technologies Group</a> of the <a href="http://studentsenate.rpi.edu" target="_blank">RPI Student Senate</a>.</p>
+	<a href="http://wiki.studentsenate.rpi.edu/w/Privacy_Policy">Privacy Policy</a>
+</footer>
+</div>
+
+<div id="warning" class="modal">
+<div class="modal-header">
+	<a class="close" data-dismiss="modal">×</a>
+	<h3>Notice</h3>
+</div>
+<div class="modal-body">
+	<strong>THIS IS A PRIVATE COMPUTER SYSTEM.</strong>
+	<ul>
+		<li>This computer system including all related equipment, network devices (specifically including Internet access), are provided only for authorized use.</li>
+		<li>All computer systems may be monitored for all lawful purposes, including to ensure that their use is authorized, for management of the system, to facilitate protection against unauthorized access, and to verify security procedures, survivability and operational security.</li>
+		<li>Monitoring includes active attacks by authorized personnel and their entities to test or verify the security of the system. During monitoring, information may be examined, recorded, copied and used for authorized purposes.</li>
+		<li>All information including personal information, placed on or sent over this system may be monitored.</li>
+		<li>Uses of this system, authorized or unauthorized, constitutes consent to monitoring of this system.</li>
+		<li>Unauthorized use may subject you to criminal prosecution.</li>
+		<li>Evidence of any such unauthorized use collected during monitoring may be used for administrative, criminal or other adverse action.</li>
+		<li>Use of this system constitutes consent to monitoring for these purposes.</li>
+	</ul>
+	
+	<strong>If you do not agree to these terms, close your browser window now.</strong>
+</div>
+<div class="modal-footer">
+	<a href="#" class="btn" data-dismiss="modal">Close</a>
+</div>
+</div>
+
+
+</body>
+
+</html>
