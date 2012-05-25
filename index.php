@@ -89,7 +89,7 @@
 	<p>Copyright &copy; RPI Student Senate 2012</p>
 	<p>Designed by the <a href="http://webtech.union.rpi.edu" target="_blank">Web Technologies Group</a> of the <a href="http://studentsenate.rpi.edu" target="_blank">RPI Student Senate</a>.</p>
 	<p>Issues, problems, or concerns?  <a href="mailto:justask@rpi.edu">Just ask.</a></p>
-	<p>This page is being served from <?php echo $_SERVER["SERVER_ADDR"]; ?> (<?php echo gethostname(); ?>), port <?php echo $_SERVER["SERVER_PORT"]; ?>.</p>
+	<p>This page is being served from <?php echo $_SERVER["SERVER_ADDR"]; ?>.</p>
 	<a href="http://wiki.studentsenate.rpi.edu/w/Privacy_Policy">Privacy Policy</a>
 </footer>
 </div>
